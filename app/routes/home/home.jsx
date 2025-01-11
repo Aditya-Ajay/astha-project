@@ -103,8 +103,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Effortless shopping experience : Designing Clicks that converts "
+        description="Crafted a seamless eCommerce experience for Solis, merging clean design with functionality to boost user engagement."
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
@@ -124,8 +124,8 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Redefining plant parenting:  green is the new black!"
+        description="Designed a unique platform for Chaperone, blending creativity and user-friendly elements to make plant care effortless and fun."
         buttonText="View website"
         buttonLink="https://gamestack.hamishw.com"
         model={{
@@ -148,8 +148,8 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Turning data into Insta-worthy visuals—because numbers should slay too!"
+        description="Created eye-catching infographics that simplify complex data and captivate audiences with striking designs."
         buttonText="View project"
         buttonLink="/projects/slice"
         model={{
@@ -163,6 +163,52 @@ export const Home = () => {
           ],
         }}
       />
+      {/* <ProjectSummary
+        id="project-4"
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={4}
+        title="Where legal careers meet opportunity"
+        description="Built a streamlined job portal tailored for lawyers, offering easy access to the right career opportunities with a professional edge."
+        buttonText="View project"
+        buttonLink="/projects/slice"
+        model={{
+          type: 'laptop',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
+              placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      /> */}
+         <ProjectSummary
+        id="project-4"
+        alternate
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={4}
+        title="Where legal careers meet opportunity"
+        description="Built a streamlined job portal tailored for lawyers, offering easy access to the right career opportunities with a professional edge."
+        buttonText="View website"
+        buttonLink="https://gamestack.hamishw.com"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
+              placeholder: gamestackTexture2Placeholder,
+            },
+          ],
+        }}
+      />
+      
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
