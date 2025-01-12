@@ -208,7 +208,6 @@ export const Home = () => {
           ],
         }}
       />
-      
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
