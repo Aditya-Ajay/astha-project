@@ -16,9 +16,9 @@ import imageSprDesignSystemDark from '~/assets/spr-design-system-dark.png';
 import imageSprDesignSystemLightLarge from '~/assets/spr-design-system-light-large.png';
 import imageSprDesignSystemLightPlaceholder from '~/assets/spr-design-system-light-placeholder.png';
 import imageSprDesignSystemLight from '~/assets/spr-design-system-light.png';
-import imageSprLessonBuilderDarkLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
+import imageSprLessonBuilderDarkLarge from '~/assets/solis-ecommerce.png';
 import imageSprLessonBuilderDarkPlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import imageSprLessonBuilderDark from '~/assets/spr-lesson-builder-dark.jpg';
+import imageSprLessonBuilderDark from '~/assets/solis-ecommerce.png';
 import imageSprLessonBuilderLightLarge from '~/assets/spr-lesson-builder-light-large.jpg';
 import imageSprLessonBuilderLightPlaceholder from '~/assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from '~/assets/spr-lesson-builder-light.jpg';
@@ -70,14 +70,13 @@ const EarthSection = lazy(() =>
   import('./earth').then(module => ({ default: module.EarthSection }))
 );
 
-const title = 'Designing the future of education';
+const title = 'Aesthetics meet effortless shopping—designing clicks that convert!';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'Crafted a seamless eCommerce experience for Solis, merging clean design with functionality to boost user engagement.';
 const roles = [
   'Art Direction',
   'UX and UI Design',
-  'Front End Development',
-  'Motion Design',
+  'UX RESEARCH',
 ];
 
 export const meta = () => {
@@ -105,7 +104,7 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
+          url="https://www.figma.com/proto/0bDqBpoS78JU6u1IGGMW9g/Solis-Ecommerce?node-id=65-2302&t=CP5xf7C6tpCrhr95-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -114,9 +113,8 @@ export const SmartSparrow = () => {
               raised
               key={theme}
               srcSet={
-                isDark
-                  ? `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
-                  : `${imageSprLessonBuilderLight} 1280w, ${imageSprLessonBuilderLightLarge} 2560w`
+                   `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
+                
               }
               width={1280}
               height={800}
@@ -134,17 +132,31 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>The problem</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+            Solis, an eCommerce platform, required a design that improved user engagement, boosted conversions, and offered an easy-to-navigate experience for shoppers across devices. The previous design lacked a cohesive aesthetic and intuitive user flow.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
-        <ProjectSection light={isDark}>
+        <ProjectSection>
+          <ProjectTextRow>
+            <ProjectSectionHeading>HOW IT GOT SOLVED</ProjectSectionHeading>
+            <ProjectSectionText>
+            I reimagined the user experience with a sleek, modern design, ensuring it was visually cohesive and intuitive. Simplified the checkout process and ensured that the product display was both attractive and functional, making the shopping experience more fluid and enjoyable.
+            </ProjectSectionText>
+          </ProjectTextRow>
+        </ProjectSection>
+        <ProjectSection>
+          <ProjectTextRow>
+            <ProjectSectionHeading>METHOD USED</ProjectSectionHeading>
+            <ProjectSectionText>
+    <ul>
+        <li>User Flow Mapping: Created detailed user flows to streamline the navigation process.</li>
+        <li>UI/UX Design: Focused on creating a responsive and visually cohesive design, with a strong emphasis on product presentation and ease of checkout.</li>
+        <li>A/B Testing: Tested different layouts and elements to optimize the design for conversions.</li>
+    </ul>
+</ProjectSectionText>
+          </ProjectTextRow>
+        </ProjectSection>
+        {/* <ProjectSection light={isDark}>
           <ProjectSectionContent>
             <Image
               key={theme}
@@ -548,7 +560,7 @@ export const SmartSparrow = () => {
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
-        </ProjectSection>
+        </ProjectSection> */}
       </ProjectContainer>
       <Footer />
     </>

@@ -1,7 +1,7 @@
 @layer components {
   .link {
     --lineStrokeWidth: 2px;
-    --linkColor: var(--primary);
+    --linkColor: #ffc107;
     --lineOpacity: 30%;
     --filledLineGradient: linear-gradient(var(--linkColor), var(--linkColor));
     --unfilledLineGradient: linear-gradient(

@@ -1,15 +1,15 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+import gamestackTexture2Large from '~/assets/job-portal-2.png';
+import gamestackTexture2Placeholder from '~/assets/job-portal-2.png';
+import gamestackTexture2 from '~/assets/job-portal-2.png';
+import gamestackTextureLarge from '~/assets/job-portal.png';
+import gamestackTexturePlaceholder from '~/assets/job-portal.png';
+import gamestackTexture from '~/assets/job-portal.png';
+import sliceTextureLarge from '~/assets/chaperone.jpg';
+import sliceTexturePlaceholder from '~/assets/chaperone.jpg';
+import sliceTexture from '~/assets/chaperone.jpg';
+import sprTextureLarge from '~/assets/solis-ecommerce.png';
+import sprTexturePlaceholder from '~/assets/solis-ecommerce.png';
+import sprTexture from '~/assets/solis-ecommerce.png';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -103,7 +103,7 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Effortless shopping experience : Designing Clicks that converts "
+        title="Aesthetics meet effortless shopping—designing clicks that convert!"
         description="Crafted a seamless eCommerce experience for Solis, merging clean design with functionality to boost user engagement."
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
@@ -124,10 +124,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Redefining plant parenting:  green is the new black!"
-        description="Designed a unique platform for Chaperone, blending creativity and user-friendly elements to make plant care effortless and fun."
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Your career, your way—designing platforms that open doors to new opportunities!"
+        description="Developed a sleek, intuitive job portal that connects talent to the right opportunities with ease and efficiency."
+        buttonText="Click For Preview"
+        buttonLink="https://www.behance.net/gallery/207934613/Job-Portal-UI"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -148,10 +148,10 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Turning data into Insta-worthy visuals—because numbers should slay too!"
-        description="Created eye-catching infographics that simplify complex data and captivate audiences with striking designs."
-        buttonText="View project"
-        buttonLink="/projects/slice"
+        title="Redefining plant parenting—because green is the new black!"
+        description="Designed a unique platform for Chaperone, blending creativity and user-friendly elements to make plant care effortless and fun."
+        buttonText="View Website"
+        buttonLink="https://www.chaperoneco.com/"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -163,36 +163,16 @@ export const Home = () => {
           ],
         }}
       />
-      {/* <ProjectSummary
-        id="project-4"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={4}
-        title="Where legal careers meet opportunity"
-        description="Built a streamlined job portal tailored for lawyers, offering easy access to the right career opportunities with a professional edge."
-        buttonText="View project"
-        buttonLink="/projects/slice"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      /> */}
-         <ProjectSummary
+          <ProjectSummary
         id="project-4"
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={4}
-        title="Where legal careers meet opportunity"
-        description="Built a streamlined job portal tailored for lawyers, offering easy access to the right career opportunities with a professional edge."
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Your career, your way—designing platforms that open doors to new opportunities!"
+        description="Developed a sleek, intuitive job portal that connects talent to the right opportunities with ease and efficiency."
+        buttonText="Click For Preview"
+        buttonLink="https://www.behance.net/gallery/207934613/Job-Portal-UI"
         model={{
           type: 'phone',
           alt: 'App login screen',

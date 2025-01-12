@@ -1,7 +1,7 @@
 @layer components {
   .container {
     --inputFontSize: calc((16 / 16) * 1rem);
-    --inputFocusColor: var(--primary);
+    --inputFocusColor: #ffc107;
     --inputUnderlineColor: color-mix(in lab, var(--text) 20%, transparent);
 
     position: relative;
@@ -42,7 +42,7 @@
     }
 
     &::-webkit-contacts-auto-fill-button:hover {
-      background-color: var(--primary);
+      background-color: #ffc107;
     }
 
     @media (--mediaReduceMotion) {

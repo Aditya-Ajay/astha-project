@@ -29,7 +29,7 @@
       transition-property: opacity, color, background;
       transition-duration: var(--durationM);
       transition-timing-function: var(--bezierFastoutSlowin);
-      background: var(--primary);
+      background: #ffc107;
       position: absolute;
       inset: 0;
       z-index: -1;
@@ -56,7 +56,7 @@
 
     &[data-secondary='true'] {
       --buttonSpace: 10px;
-      --buttonTextColor: var(--primary);
+      --buttonTextColor: #ffc107;
 
       background: none;
       padding-left: var(--buttonSpace);
@@ -70,7 +70,7 @@
         height: calc((32 / 16) * 1rem);
         position: absolute;
         inset: 0;
-        background-color: color-mix(in lab, var(--primary) 20%, transparent);
+        background-color: color-mix(in lab, #ffc107 20%, transparent);
         transform: scale3d(0, 1, 1);
         transform-origin: right;
         clip-path: none;
