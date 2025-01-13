@@ -4,6 +4,8 @@ import gamestackTexture2 from '~/assets/job-portal-2.png';
 import gamestackTextureLarge from '~/assets/job-portal.png';
 import gamestackTexturePlaceholder from '~/assets/job-portal.png';
 import gamestackTexture from '~/assets/job-portal.png';
+import awareness2 from '~/assets/3b.png';
+import awareness from '~/assets/3a.png';
 import sliceTextureLarge from '~/assets/chaperone.jpg';
 import sliceTexturePlaceholder from '~/assets/chaperone.jpg';
 import sliceTexture from '~/assets/chaperone.jpg';
@@ -41,8 +43,8 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
-    description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
+    title: 'Designer',
+    description: `Design portfolio of Astha Mishra — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
   });
 };
 
@@ -159,31 +161,6 @@ export const Home = () => {
             {
               srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
               placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-          <ProjectSummary
-        id="project-4"
-        alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
-        index={4}
-        title="Your career, your way—designing platforms that open doors to new opportunities!"
-        description="Developed a sleek, intuitive job portal that connects talent to the right opportunities with ease and efficiency."
-        buttonText="Click For Preview"
-        buttonLink="https://www.behance.net/gallery/207934613/Job-Portal-UI"
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
-              placeholder: gamestackTexture2Placeholder,
             },
           ],
         }}

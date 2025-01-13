@@ -15,8 +15,8 @@
     <symbol id="menu" width="24" height="24" viewBox="0 0 24 24">
       <path d="M22 6H2V4h20v2ZM2 13h16v-2H2v2Zm0 7h20v-2H2v2Z"/>
     </symbol>
-    <symbol id="figma" width="24" height="24" viewBox="0 0 24 24">
-      <path fill-rule="evenodd" d="M15 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-2 5.46A4 4 0 0 0 17.65 9a4.01 4.01 0 0 0 .18-5.83A4 4 0 0 0 15 2H9a4 4 0 0 0-2.65 7 4.01 4.01 0 0 0 0 6A3.98 3.98 0 0 0 5 18a4 4 0 1 0 8 0v-2.54ZM11 16H9a2 2 0 1 0 2 2v-2ZM9 8h2V4H9a2 2 0 1 0 0 4Zm0 2a2 2 0 1 0 0 4h2v-4H9Zm4-2V4h2a2 2 0 0 1 0 4h-2Z"/>
+    <symbol id="figma" width="40" height="64" viewBox="48 48 48 48">
+  <path d="M36.6526 3.8078H43.3995L28.6594 20.6548L46 43.5797H32.4225L21.7881 29.6759L9.61989 43.5797H2.86886L18.6349 25.56L2 3.8078H15.9222L25.5348 16.5165L36.6526 3.8078ZM34.2846 39.5414H38.0232L13.8908 7.63406H9.87892L34.2846 39.5414Z" fill="white"/>
     </symbol>
     <symbol id="copy" width="24" height="24" viewBox="0 0 24 24">
       <path d="M3 2h12v4H7v10H3V2Zm6 20V8h12v11l-3 3H9Z"/>
