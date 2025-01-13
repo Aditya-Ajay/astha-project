@@ -18,7 +18,7 @@ export const navLinks = [
 export const socialLinks = [
   {
     label: 'Twitter',
-    url: `https://x.com/asthamii`,
+    url: `https://www.linkedin.com/in/mishraastha/`,
     icon: 'bluesky',
   },
   {
@@ -27,8 +27,8 @@ export const socialLinks = [
     icon: 'figma',
   },
   {
-    label: 'LikedIn',
-    url: `https://www.linkedin.com/in/mishraastha/`,
-    icon: 'https://blog.waalaxy.com/wp-content/uploads/2021/01/24.png',
+    label: 'Github',
+    url: `https://x.com/asthamii/`,
+    icon: 'github',
   },
 ];
