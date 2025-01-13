@@ -16,6 +16,7 @@ import { baseMeta } from '~/utils/meta';
 import { Form, useActionData, useNavigation } from '@remix-run/react';
 import { json } from '@remix-run/cloudflare';
 import { SESClient, SendEmailCommand } from '@aws-sdk/client-ses';
+import emailjs from '@emailjs/browser';
 import styles from './contact.module.css';
 
 export const meta = () => {
@@ -94,6 +95,7 @@ export async function action({ context, request }) {
 }
 
 export const Contact = () => {
+  
   const errorRef = useRef();
   const email = useFormInput('');
   const message = useFormInput('');
@@ -101,6 +103,25 @@ export const Contact = () => {
   const actionData = useActionData();
   const { state } = useNavigation();
   const sending = state === 'submitting';
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      "service_iucf9cc",  
+      "template_feymv3h",  
+      e.target,  
+      "0_3YgGARSikaFD7j_" 
+    ).then(
+      (result) => {
+        console.log(result.text);
+        alert('Job application submitted successfully!');
+      },
+      (error) => {
+        console.log(error.text);
+        alert('Failed to send application. Please try again later.');
+      }
+    );
+  };
 
   return (
     <Section className={styles.contact}>
@@ -111,6 +132,7 @@ export const Contact = () => {
             className={styles.form}
             method="post"
             ref={nodeRef}
+            onSubmit={handleSubmit}
           >
             <Heading
               className={styles.title}
