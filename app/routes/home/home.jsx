@@ -43,7 +43,7 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'UI/UX DESIGNER',
+    title: 'UI/UX Designer Portfolio',
     description: `Design portfolio of Astha Mishra — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
   });
 };
