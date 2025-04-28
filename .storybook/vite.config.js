@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => {
   process.env = { ...process.env, ...env };
 
   return {
+    base: '/',
     plugins: [jsconfigPaths(), react()],
   };
 });
