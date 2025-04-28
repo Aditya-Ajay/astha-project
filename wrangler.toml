@@ -1,3 +1,12 @@
+compatibility_date = "2025-04-29"
+
 kv_namespaces = [
   { id = "MY_KV", binding="MY_KV" }
 ]
+
+[build]
+command = "npm run build"
+upload = { format = "directory", dir = "./dist" }
+
+[site]
+bucket = "./dist"
